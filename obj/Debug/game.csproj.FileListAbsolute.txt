@@ -1,0 +1,12 @@
+D:\ITea\progect\game\game\bin\Debug\game.exe.config
+D:\ITea\progect\game\game\bin\Debug\game.exe
+D:\ITea\progect\game\game\bin\Debug\game.pdb
+D:\ITea\progect\game\game\obj\Debug\game.csprojResolveAssemblyReference.cache
+D:\ITea\progect\game\game\obj\Debug\game.exe
+D:\ITea\progect\game\game\obj\Debug\game.pdb
+D:\it\progect\game\game\bin\Debug\game.exe.config
+D:\it\progect\game\game\obj\Debug\game.exe
+D:\it\progect\game\game\obj\Debug\game.pdb
+D:\it\progect\game\game\bin\Debug\game.exe
+D:\it\progect\game\game\bin\Debug\game.pdb
+D:\it\progect\game\game\obj\Debug\game.csprojResolveAssemblyReference.cache
