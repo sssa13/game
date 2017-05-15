@@ -10,3 +10,9 @@ D:\it\progect\game\game\obj\Debug\game.pdb
 D:\it\progect\game\game\bin\Debug\game.exe
 D:\it\progect\game\game\bin\Debug\game.pdb
 D:\it\progect\game\game\obj\Debug\game.csprojResolveAssemblyReference.cache
+D:\ITea\game\bin\Debug\game.exe.config
+D:\ITea\game\obj\Debug\game.exe
+D:\ITea\game\obj\Debug\game.pdb
+D:\ITea\game\obj\Debug\game.csprojResolveAssemblyReference.cache
+D:\ITea\game\bin\Debug\game.exe
+D:\ITea\game\bin\Debug\game.pdb

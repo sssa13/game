@@ -13,24 +13,45 @@ namespace game
         public int AtacArbalets { get; set; }
 
         
-       public void Atac( Dragon dragon)
+       public void GetAtac( Dragon dragon)
         {
-            while (dragon.Life > 0 && Life > 0) 
-            {
-                string answer;
-                answer = Console.ReadLine();
-                if (answer == "1")
-                    dragon.Life = dragon.Life - (AtacArbalets - dragon.ProtectionArbalest);
-                if (answer == "2")
-                    dragon.Life = dragon.Life - (AtacSword - dragon.ProtectionSword);
-                if (answer == "3")
-                    dragon.Life = dragon.Life - (AtacMagic - dragon.ProtectionMagic);
+            Random rand = new Random();
 
-                Life = Life - (dragon.Atac - Protection);
+            while (dragon.Life >= 0 && Life >= 0) 
+            {
+                AtacArbalets = rand.Next(5, 10);
+                AtacSword = rand.Next(10, 15);
+                AtacMagic = rand.Next(10, 20);
+                dragon.Atac = rand.Next(5, 20);
+
+                if (rand.Next(1, 100) > 50)
+                {
+                    Console.WriteLine("Atac knight!");
+                    Console.WriteLine("Take weapon: 1 - Arbalets, 2 - Sword, 3 - Magic");
+                    string answer = Console.ReadLine();
+                    if (answer == "1")
+                        dragon.Life = dragon.Life - (AtacArbalets - dragon.ProtectionArbalest);
+                    if (answer == "2")
+                        dragon.Life = dragon.Life - (AtacSword - dragon.ProtectionSword);
+                    if (answer == "3")
+                        dragon.Life = dragon.Life - (AtacMagic - dragon.ProtectionMagic);
+                }
+
+                if (rand.Next(1, 100) > 50)
+                {
+                    Console.WriteLine("Atac dragon!");
+                    Life = Life - (dragon.Atac - Protection);
+                }
+                
 
                 Console.WriteLine("Dragon: " + dragon.Life);
                 Console.WriteLine("Knight: " + Life);
-            } 
+            }
+
+           
+
+
+
         }
 
         

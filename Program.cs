@@ -12,7 +12,7 @@ namespace game
         {
             Dragon dragon = new Dragon();
             dragon.Life = 100;
-            dragon.Atac = 10;
+           // dragon.Atac = 10;
             dragon.ProtectionArbalest = 5;
             dragon.ProtectionMagic = 3;
             dragon.ProtectionSword = 6;
@@ -20,15 +20,15 @@ namespace game
             Knight knight = new Knight();
             knight.Life = 100;
             knight.Protection = 2;
-            knight.AtacArbalets = 10;
-            knight.AtacSword = 15;
-            knight.AtacMagic = 20;
 
+               
+         
+            while (dragon.Life >= 0 && knight.Life >= 0)
+            {
+                knight.GetAtac(dragon);
+            }
 
-
-            Console.WriteLine("Take weapon: 1 - Arbalets, 2 - Sword, 3 - Magic");
-
-            knight.Atac(dragon);
+                
            
 
             if (dragon.Life <= 0 && knight.Life > 0)
